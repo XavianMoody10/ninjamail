@@ -5,6 +5,9 @@
 
   /* COLOR */
   --pmy-color: #4ba87d;
+
+  /* Widths  */
+  --mx-width: 1300px;
 }
 
 * {
@@ -31,13 +34,26 @@ a {
   color: var(--pmy-color);
 }
 
+.btn--secondary-white {
+  font-family: var(--fnt-2);
+  font-weight: 800;
+  color: var(--pmy-color);
+  border: 3px solid var(--pmy-color);
+  background-color: white;
+}
+
+.btn--secondary-white:hover {
+  background-color: var(--pmy-color);
+  color: white;
+}
+
 /* -------------- HEADER -------------- */
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 15px;
-  max-width: 1300px;
+  max-width: var(--mx-width);
   margin: 0 auto;
 }
 
@@ -87,4 +103,94 @@ a {
 .signup-btn {
   font-size: 0.9rem;
   padding: 4px 15px;
+}
+
+/* -------------- HERO SECTION -------------- */
+.hero-section {
+  margin-top: 50px;
+  max-width: var(--mx-width);
+}
+
+.hero-intro {
+  position: relative;
+  width: 100%;
+  max-width: 508px;
+  margin: 0 auto;
+}
+
+.hero-intro__text {
+  position: absolute;
+  top: -50px;
+  margin: 0 10px;
+  min-height: 318px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transform: translateX(-10px);
+  animation-name: enterFromLeft;
+  animation-duration: 0.5s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  z-index: 1;
+}
+
+@keyframes enterFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.hero-intro__title {
+  font-size: 2.35rem;
+  font-family: var(--fnt-1);
+  max-width: 95%;
+}
+
+.hero-intro__caption {
+  font-size: 0.9rem;
+  font-family: var(--fnt-2);
+  font-weight: 500;
+  margin-top: auto;
+}
+
+.hero-intro__buttons {
+  margin-top: 10px;
+  display: flex;
+  gap: 15px;
+  max-width: 300px;
+}
+
+.trynow-btn,
+.getademo-btn {
+  font-size: 0.9rem;
+  width: 100%;
+  text-align: center;
+  padding: 8px;
+}
+
+.hero-intro__image {
+  display: block;
+  max-width: 400px;
+  margin-left: auto;
+  opacity: 0;
+  animation-name: enterImage;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes enterImage {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
