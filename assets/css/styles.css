@@ -1,0 +1,130 @@
+:root {
+  /* FONTS */
+  --fnt-1: "Playfair Display", serif;
+  --fnt-2: "Raleway", sans-serif;
+
+  /* COLOR */
+  --pmy-color: #4ba87d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Utilities */
+.btn--primary-green {
+  font-family: var(--fnt-2);
+  font-weight: 800;
+  color: white;
+  background-color: var(--pmy-color);
+  border: 3px solid var(--pmy-color);
+}
+
+.btn--primary-green:hover {
+  background-color: white;
+  color: var(--pmy-color);
+}
+
+/* -------------- HEADER -------------- */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.header-navigation {
+  display: none;
+  margin-left: auto;
+  margin-right: 30px;
+}
+
+.header-navigation__list {
+  display: flex;
+  gap: 15px;
+}
+
+.header-navigation__item {
+  list-style: none;
+}
+
+.header-navigation__anchor {
+  font-size: 0.9rem;
+  font-family: var(--fnt-2);
+  font-weight: 800;
+  text-decoration: none;
+  color: black;
+  padding: 0 10px 5px 10px;
+  position: relative;
+}
+
+.header-navigation__anchor::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 0;
+  border-bottom: 4px solid var(--pmy-color);
+  transform: translate(-50%, 0);
+}
+
+.header-navigation__anchor:hover::after {
+  animation-name: anchorHover;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes anchorHover {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+.signup-btn {
+  font-size: 0.9rem;
+  padding: 4px 15px;
+}
+
+@media (min-width: 934px) {
+  .header {
+    padding: 30px 20px;
+  }
+
+  .header__logo {
+    width: 200px;
+  }
+
+  .header-navigation {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 1300px) {
+  .header__logo {
+    width: 250px;
+  }
+
+  .header-navigation__anchor,
+  .signup-btn {
+    font-size: 1rem;
+  }
+
+  .signup-btn {
+    padding: 7px 22px;
+  }
+}
