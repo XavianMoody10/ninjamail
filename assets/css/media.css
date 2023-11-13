@@ -1,0 +1,29 @@
+/* -------------- HEADER -------------- */
+@media (min-width: 934px) {
+  .header {
+    padding: 30px 20px;
+  }
+
+  .header__logo {
+    width: 200px;
+  }
+
+  .header-navigation {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 1300px) {
+  .header__logo {
+    width: 250px;
+  }
+
+  .header-navigation__anchor,
+  .signup-btn {
+    font-size: 1rem;
+  }
+
+  .signup-btn {
+    padding: 7px 22px;
+  }
+}
