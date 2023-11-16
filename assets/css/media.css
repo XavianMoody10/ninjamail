@@ -185,12 +185,13 @@
 @media (min-width: 538px) {
   .testimonial-video {
     margin-top: 100px;
+    margin-bottom: 55px;
   }
 }
 
 @media (min-width: 768px) {
   .testimonial__inner {
-    background-image: url("../images/slash_black.svg");
+    background-size: auto;
     background-position: 0 -200px;
     background-repeat: no-repeat;
   }
