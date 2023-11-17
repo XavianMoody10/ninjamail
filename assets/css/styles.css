@@ -269,8 +269,6 @@ a {
 /* -------------- INFO SECTION -------------- */
 .info-section {
   position: relative;
-  /* height: 100vh; */
-  /* bottom: 400px; */
 }
 
 .info-section__inner {
@@ -281,8 +279,6 @@ a {
 .info-section__bg {
   width: 100%;
   position: relative;
-  /* height: 1400px; */
-  /* top: 20px; */
 }
 
 .info-section__bg::before {
@@ -353,7 +349,6 @@ a {
   color: var(--pmy-color);
   font-family: var(--fnt-2);
   font-weight: 700;
-  /* margin-top: 20px; */
 }
 
 .extra-text {
@@ -376,142 +371,112 @@ a {
   font-weight: 600;
 }
 
-@media (min-width: 540px) {
-  .info-section__bg {
-    z-index: 1;
-  }
-
-  .info-section__bg::before {
-    margin-top: 0;
-    top: -480px;
-  }
-
-  .info-wrapper {
-    width: fit-content;
-  }
-
-  .info-card {
-    margin: 0 0;
-  }
-
-  .extra-text {
-    max-width: 550px;
-    text-align: center;
-  }
+/* -------------- JOBS SECTION -------------- */
+.jobs-section {
+  position: relative;
+  top: 70px;
+  z-index: 2;
 }
 
-@media (min-width: 900px) {
-  .info-section__bg::before {
-    top: -445px;
-    height: 1400px;
-    clip-path: polygon(100% 13%, 100% 72%, 0 87%, 0 29%);
-  }
-
-  .info-section__bg {
-    padding-top: 60px;
-  }
-
-  .info-section__inner {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    gap: 50px;
-    max-width: 1070px;
-  }
-
-  .extra-text {
-    max-width: 266px;
-    text-align: start;
-  }
-
-  .info-card:nth-of-type(1) {
-    position: relative;
-    top: -50px;
-  }
+.employee-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin: 0 auto;
+  width: 85%;
+  max-width: 1200px;
 }
 
-@media (min-width: 1050px) {
-  .extra-text {
-    max-width: none;
-  }
-
-  .extra-text__heading {
-    font-size: 2.5rem;
-    max-width: 350px;
-  }
-
-  .extra-text__caption {
-    font-size: 1.2rem;
-    max-width: 340px;
-  }
-
-  .info-card {
-    width: 300px;
-  }
-
-  .info {
-    height: 200px;
-  }
-
-  .info__description {
-    font-size: 1.1rem;
-    font-weight: 500;
-    height: 100%;
-    line-height: 1.5rem;
-  }
+.employee-card {
+  height: 170px;
+  width: 100%;
+  background-color: black;
+  max-width: 272px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
 }
 
-@media (min-width: 1300px) {
-  .info-section__bg::before {
-    top: -450px;
-    height: 1400px;
-  }
+.employee-card__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: flex-end;
+  padding: 20px;
+  background: linear-gradient(0deg, #000 -32.5%, rgba(84, 84, 84, 0) 67.78%);
+}
 
-  .extra-text {
-    padding: 0;
-    margin: 0;
-    margin-top: 30px;
-    margin-left: 20px;
-  }
+.employee-card__name,
+.employee-card__duration {
+  color: white;
+  font-family: var(--fnt-2);
+}
 
-  .info-section__inner {
-    max-width: 1200px;
-    gap: 0;
-  }
+.employee-card__name {
+  font-size: 3rem;
+  font-weight: 800;
+}
 
-  .info-wrapper {
-    margin: 0;
-    gap: 50px;
-    flex-wrap: nowrap;
-    flex-direction: row;
-  }
+.employee-card__duration {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
 
-  .info-card__image {
-    height: 260px;
-  }
+.employee-card:nth-of-type(1) {
+  background-image: url("../images/employee-1.jpg");
+}
+.employee-card:nth-of-type(2) {
+  background-image: url("../images/employee-2.jpg");
+}
+.employee-card:nth-of-type(3) {
+  background-image: url("../images/employee-3.jpg");
+}
 
-  .info-card {
-    width: 330px;
-  }
+.jobs-section__heading {
+  font-size: 1.5rem;
+  text-align: center;
+  width: 100%;
+  max-width: 470px;
+  margin: 50px auto 20px auto;
+  font-family: var(--fnt-1);
+  font-weight: 900;
+}
 
-  .info__description {
-    font-size: 1.1rem;
-    line-height: 1.8rem;
-  }
+.jobs-newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  .extra-text {
-    gap: 30px;
-    margin-left: 30px;
-  }
+.jobs-newsletter__prompt {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  max-width: 300px;
+}
 
-  .extra-text__heading {
-    font-size: 3.2rem;
-    max-width: 500px;
-  }
+.jobs-newsletter__input {
+  padding: 8px 13px;
+  font-size: 1.1rem;
+  font-family: var(--fnt-2);
+}
 
-  .extra-text__caption {
-    font-size: 1.3rem;
-    max-width: 380px;
-    line-height: 1.8rem;
-  }
+.jobs-newsletter__message {
+  text-align: center;
+  font-family: var(--fnt-2);
+  color: var(--pmy-color);
+}
+
+.jobs-newsletter__btn {
+  margin-top: 15px;
+  padding: 8px 20px;
 }
