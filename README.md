@@ -1,7 +1,7 @@
 # ninjamail
 NinjaMail is a fully responsive landing page built using HTML and CSS
 
-![upbox-thumbnail](https://github.com/XavianMoody10/upbox/assets/91290500/4e136fb3-f715-47b6-99d8-11972459a532)
+![ninjamail](https://github.com/XavianMoody10/ninjamail/assets/91290500/24e3f9f0-af14-4cc2-8c74-a5b7ad3704ac)
 
 ## Why Make this project
 This project is just to reassure my understanding of how HTML and CSS work. There are still some things that I need to work on which include, class naming and determining whether I should use flex or grid in certain situations. But hey!!!, I will improve. 
