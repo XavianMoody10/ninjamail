@@ -470,12 +470,6 @@ a {
   font-family: var(--fnt-2);
 }
 
-.jobs-newsletter__message {
-  text-align: center;
-  font-family: var(--fnt-2);
-  color: var(--pmy-color);
-}
-
 .jobs-newsletter__btn {
   margin-top: 15px;
   padding: 8px 20px;
