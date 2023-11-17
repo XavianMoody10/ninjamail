@@ -504,3 +504,29 @@ a {
   justify-content: center;
   margin-top: 40px;
 }
+
+/* -------------- PLAN SECTION -------------- */
+.plan-section {
+  background-color: var(--pmy-color);
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.plan-section__heading {
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.pickaplan-btn {
+  color: var(--pmy-color);
+  font-family: var(--fnt-2);
+  font-weight: 800;
+  background-color: white;
+  padding: 20px 40px;
+  font-size: 1.1rem;
+}

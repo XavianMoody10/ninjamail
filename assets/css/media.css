@@ -453,3 +453,21 @@
     width: 150px;
   }
 }
+
+/* -------------- PLAN SECTION -------------- */
+
+@media (min-width: 944px) {
+  .plan-section__heading {
+    font-size: 5rem;
+  }
+
+  .pickaplan-btn {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 1300px) {
+  .plan-section {
+    margin-top: 120px;
+  }
+}
