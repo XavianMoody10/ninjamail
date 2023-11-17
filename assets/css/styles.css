@@ -480,3 +480,27 @@ a {
   margin-top: 15px;
   padding: 8px 20px;
 }
+
+/* -------------- SPONSORS SECTION -------------- */
+.sponsors-section {
+  margin-top: 120px;
+  height: 300px;
+}
+
+.sponsors-section__heading {
+  font-size: 1.5rem;
+  text-align: center;
+  width: 100%;
+  max-width: 250px;
+  margin: 50px auto 20px auto;
+  font-family: var(--fnt-1);
+  font-weight: 900;
+}
+
+.logo-container {
+  gap: 30px 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+}

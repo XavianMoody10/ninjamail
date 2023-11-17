@@ -420,3 +420,36 @@
     height: 250px;
   }
 }
+
+/* -------------- SPONSORS SECTION -------------- */
+@media (min-width: 1300px) {
+  .sponsors-section {
+    position: relative;
+    top: 100px;
+  }
+
+  .sponsors-section__heading {
+    font-size: 2.8rem;
+    max-width: 400px;
+  }
+
+  .logo-container {
+    gap: 0 70px;
+  }
+
+  .sponsor-logo:nth-of-type(1) {
+    width: 100px;
+  }
+  .sponsor-logo:nth-of-type(2) {
+    width: 170px;
+  }
+  .sponsor-logo:nth-of-type(3) {
+    width: 170px;
+  }
+  .sponsor-logo:nth-of-type(4) {
+    width: 150px;
+  }
+  .sponsor-logo:nth-of-type(5) {
+    width: 150px;
+  }
+}
